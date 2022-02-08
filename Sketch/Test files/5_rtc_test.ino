@@ -1,14 +1,4 @@
-// DS1302_Serial_Hard
-// Copyright (C)2015 Rinky-Dink Electronics, Henning Karlsen. All right reserved
-// web: http://www.RinkyDinkElectronics.com/
-//
-// A quick demo of how to use my DS1302-library to
-// retrieve time- and date-date for you to manipulate.
-//
-// I assume you know how to connect the DS1302.
-// DS1302:  CE pin    -> Arduino Digital 2
-//          I/O pin   -> Arduino Digital 3
-//          SCLK pin  -> Arduino Digital 4
+//sets the DS3231 RTC, gets the time in single variable and displays on the serial monitor
 
 #include <DS1302.h>
 
