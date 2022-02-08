@@ -1,3 +1,7 @@
+//external interrupts attached to CLK and DT of encoder
+//updates a variable based on rotation of enocder
+//and displays on TM1637
+
 #include <TM1637Display.h>
 
 #define TM_CLK 5
