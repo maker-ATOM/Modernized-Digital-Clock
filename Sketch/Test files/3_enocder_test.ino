@@ -1,3 +1,5 @@
+//detects change in rotary encoder by polling the pins of encoder
+
 #define CLK 2
 #define DT 3
 #define SW A0
@@ -8,7 +10,8 @@ int lastStateCLK;
 String currentDir ="";
 unsigned long lastButtonPress = 0;
 
-void setup() {
+void setup()
+{
   
   // Set encoder pins as inputs
   pinMode(CLK,INPUT);
@@ -22,7 +25,8 @@ void setup() {
   lastStateCLK = digitalRead(CLK);
 }
 
-void loop() {
+void loop()
+{
   
   // Read the current state of CLK
   currentStateCLK = digitalRead(CLK);
