@@ -1,3 +1,5 @@
+//external interrupts attached to CLK and DT of encoder
+
 // Rotary Encoder Inputs
 #define CLK 2
 #define DT 4
