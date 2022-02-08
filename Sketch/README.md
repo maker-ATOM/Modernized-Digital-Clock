@@ -1,1 +1,1 @@
-Arduino code files to program the clock.
+Arduino programs files to program the clock.
