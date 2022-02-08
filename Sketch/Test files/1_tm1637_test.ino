@@ -1,3 +1,6 @@
+//increments data after every 500ms and displays on TM1637
+//each digit of the data is stored in different variable
+
 #include <TM1637Display.h>
 
 #define CLK 5
