@@ -1,14 +1,4 @@
-// DS1302_Serial_Hard
-// Copyright (C)2015 Rinky-Dink Electronics, Henning Karlsen. All right reserved
-// web: http://www.RinkyDinkElectronics.com/
-//
-// A quick demo of how to use my DS1302-library to
-// retrieve time- and date-date for you to manipulate.
-//
-// I assume you know how to connect the DS1302.
-// DS1302:  CE pin    -> Arduino Digital 2
-//          I/O pin   -> Arduino Digital 3
-//          SCLK pin  -> Arduino Digital 4
+//gets the data from RTC and displays on TM1637
 
 #include <DS1302.h>
 #include <TM1637Display.h>
@@ -39,12 +29,13 @@ void setup()
   //rtc.setDOW(FRIDAY);        // Set Day-of-Week to FRIDAY
   //rtc.setTime(14, 27, 10);     // Set the time to 12:00:00 (24hr format)
   //rtc.setDate(6, 8, 2010);   // Set the date to August 6th, 2010
+  display.setBrightness(0x02);
 }
 
 void loop()
 {
   
-  display.setBrightness(0x02);
+  
   // Get data from the DS1302
   t = rtc.getTime();
 
@@ -52,7 +43,7 @@ void loop()
   i = i + (t.hour * 100);
 
   Serial.println(i);
-   display.showNumberDecEx(i, B11100000, true,4,0);
+  display.showNumberDecEx(i, B11100000, true,4,0);
 
 
   // Wait one second before repeating :)
