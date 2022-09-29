@@ -9,6 +9,7 @@ Build Instructions: https://www.instructables.com/Modernized-Digital-Clock/
 
 ### Exploded view
 
+
 ![exploded](https://user-images.githubusercontent.com/87944335/193020794-2ae830eb-0dbc-400c-b3d6-9227c3ce1d78.PNG)
 
 
